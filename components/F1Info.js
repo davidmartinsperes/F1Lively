@@ -178,9 +178,14 @@ const App = ({ navigation }) => (
           text={["Temos como objetivo te deixar atualizado sobre todos os dias, horários e locais de da Fórmula 1, sendo assim te mantendo atualizado e tendo todas as informações na palma da sua mão."]}
         />
         <TouchableOpacity
-          onPress={() => navigation.navigate("Grid")}
-        >
+          onPress={() => navigation.navigate("Grid")}>
           <Item title="GRID DE 2025" />
+
+        </TouchableOpacity>
+        
+        <TouchableOpacity onPress={() => navigation.navigate("FaArea")}>
+          <Item title="Fã Area" />
+
         </TouchableOpacity>
 
         <FlatList
@@ -196,7 +201,7 @@ const App = ({ navigation }) => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop:2,
+    marginTop: 2,
   },
   headerTitle: {
     color: 'black',
